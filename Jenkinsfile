@@ -18,6 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                sh 'java -jar /var/lib/jenkins/workspace/JenkinsPipeline/target/gs-spring-boot-0.1.0.jar'
             }
         }
     }
